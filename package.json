@@ -1,0 +1,41 @@
+{
+  "name": "typescript-transformer-demo",
+  "version": "1.0.0",
+  "description": "StahlstadtJS Demo for Typescript Transformers",
+  "main": "compile.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/node": "^8.0.31",
+    "chalk": "^2.1.0",
+    "path": "^0.12.7",
+    "ts-node": "^3.3.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "typescript": "^2.5.3",
+    "vrsource-tslint-rules": "^5.1.1"
+  },
+  "scripts": {
+    "build": "npm run build-tools && node dist/tools/compile.js",
+    "build-tools": "tsc -P tools/tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaspink/typescript-transformer-demo.git"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "keywords": [
+    "typescript",
+    "stahlstadtjs",
+    "transformer",
+    "compiler"
+  ],
+  "author": "Thomas Pink @thpnk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomaspink/typescript-transformer-demo/issues"
+  },
+  "homepage": "https://github.com/thomaspink/typescript-transformer-demo#readme"
+}
